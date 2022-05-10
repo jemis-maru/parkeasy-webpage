@@ -1,0 +1,259 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+
+.custom-navbar{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    box-sizing: border-box;
+    background-color: #f1bb30;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+}
+
+.nav-logo{
+    max-width: 180px;
+}
+
+.nav-list{
+    display: flex;
+    list-style: none;
+}
+
+.list-items{
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.list-items a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.drawerDiv{
+    display: none;
+}
+
+.icon-drawer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Book slot section */
+
+.book-slot-section{
+    padding: 100px 7%;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(135deg, #fefefe, #f8dd98, #ff8f00);
+}
+
+.book-slot-content{
+    padding-right: 50px;
+    flex: 50%;
+}
+
+.book-slot-img{
+    flex: 40%;
+}
+
+.img-book-slot{
+    max-width: 500px;
+}
+
+.book-slot-header{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.book-slot-header-text{
+    margin-top: -30px;
+}
+
+.orange-txt{
+    color: #f1bb30;
+}
+
+.book-slot-btn{
+    background-color: #f1bb30;
+    max-width: 220px;
+    padding: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* How it work section */
+
+.how-section{
+    margin-top: 70px;
+    padding: 0 7%;
+}
+
+.how-header{
+    font-size: 25px;
+}
+
+.txt-center{
+    text-align: center;
+}
+
+.grid-container{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.grid-container .col{
+    flex: 1 0 200px;
+    padding-top: 30px;
+    z-index: -3;
+    position: relative;
+}
+
+.number-img{
+    position: absolute;
+    top: 0;
+    left: 15px;
+    max-width: 35px;
+}
+
+.grid-img-container{
+    display: flex;
+    justify-content: center;
+    min-height: 180px;
+}
+
+.grid-img{
+    max-width: 100px;
+}
+
+.grid-content{
+    text-align: center;
+}
+
+.grid-title{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* benefits section */
+
+.benefits-section{
+    margin-top: 70px;
+    padding: 50px 7%;
+    background-color: #f8dd98;
+}
+
+.benefits-header{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.benefits-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+@media all and (max-width: 1000px) {
+
+    /* Book slot section */
+
+    .img-book-slot{
+        max-width: 400px;
+    }
+
+    /* How it work section */
+
+    .col{
+        margin-top: 20px;
+    }
+}
+
+@media all and (max-width: 900px) {
+
+    /* Navbar */
+
+    .nav-logo{
+        max-width: 150px;
+    }
+
+    .list-items{
+        font-size: 15px;
+    }
+
+    /* Book slot section */
+
+    .img-book-slot{
+        max-width: 300px;
+    }
+
+    /* benefits section */
+
+    .benefits-row{
+        justify-content: center;
+    }
+}
+
+@media all and (max-width: 768px) {
+
+    /* Navbar */
+
+    .nav-logo{
+        max-width: 130px;
+    }
+
+    .custom-navbar, .nav-list, .navShow{
+        display: block;
+    }
+
+    .custom-navbar{
+        padding: 10px 7%;
+    }
+
+    .navHide, .nav-list-div{
+        display: none;
+    }
+
+    .drawerDiv{
+        margin-left: auto;
+        margin-right: 20px;
+        cursor: pointer;
+        display: block;
+    }
+
+    .drawer{
+        width: 35px;
+        height: 5px;
+        background-color: #ffffff;
+        margin: 6px 0;
+    }
+
+    /* Book slot section */
+
+    .book-slot-section{
+        display: block;
+    }
+
+    .book-slot-img{
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+}
