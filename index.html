@@ -7,6 +7,7 @@
     <title>parkeasy</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./assets/favicon.png">
+    <link href="http://fonts.cdnfonts.com/css/sofia-pro" rel="stylesheet">
     <script src="./script.js"></script>
 </head>
 <body>
@@ -45,9 +46,9 @@
     </header>
     <section class="book-slot-section">
         <div class="book-slot-content">
-            <div class="book-slot-header">
-                <h1>Parking Made Easy</h1>
-                <h1 class="book-slot-header-text">By <span class="orange-txt">parkeasy</span></h1>
+            <div>
+                <h1 class="book-slot-header">Parking Made Easy</h1>
+                <h1 class="book-slot-header book-slot-header-text">By <span class="orange-txt">parkeasy</span></h1>
             </div>
             <div>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eius necessitatibus ab modi, ad vero ipsam illo soluta, consequatur esse perspiciatis harum dolores corporis, facilis doloribus veniam fugit tenetur veritatis.
@@ -129,6 +130,51 @@
                 <p>- Lorem ipsum dolor sit amet consectetur.</p>
                 <p>- Lorem ipsum dolor sit amet consectetur.</p>
                 <p>- Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+        </div>
+    </section>
+    <section class="video-section">
+        <div class="video-header">
+            <h1>What Parkers say about parkeasy</h1>
+            <div onmouseover="hoverVideo()" onmouseout="hoverOut()" class="video-container">
+                <div class="play-btn-container">
+                    <img onclick="playFunction()" id="play-btn" class="play-btn" src="./assets/group-33.png">
+                    <img onclick="pauseFunction()" id="pause-btn" class="play-btn play-btn-toggle" src="./assets/group-34.png">
+                </div>
+                <video id="video1" class="video-tag">
+                    <source src="./assets/mov-bbb.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="book-slot-btn-container">
+                <div class="book-slot-btn video-book-btn">
+                    Book Slot
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="benefits-section">
+        <div class="benefits-header">
+            <h1>Do Your Organization or Business also face any of</h1>
+            <h1 class="book-slot-header-text">these kind of Problems???</h1>
+        </div>
+        <div>
+            <div class="txt-center">
+                <p>✓ Lorem ipsum dolor sit amet consectetur.</p>
+                <p>✓ Lorem ipsum dolor sit amet consectetur.</p>
+                <p>✓ Lorem ipsum dolor sit amet consectetur.</p>
+                <p>✓ Lorem ipsum dolor sit amet consectetur.</p>
+                <p>✓ Lorem ipsum dolor sit amet consectetur.</p>
+                <p>✓ Lorem ipsum dolor sit amet consectetur.</p>
+                <p>✓ Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+        </div>
+        <div class="benefits-header">
+            <h1>We have solution for all kind of</h1>
+            <h1 class="book-slot-header-text">Parking Problems</h1>
+        </div>
+        <div class="book-slot-btn-container">
+            <div class="book-slot-btn video-book-btn">
+                Book Demo
             </div>
         </div>
     </section>
