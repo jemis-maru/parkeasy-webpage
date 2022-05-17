@@ -293,10 +293,16 @@ body{
     height: 120px;
 }
 
-.hr-line{
+.hr-line-div{
     margin-top: 30px;
+}
+
+.hr-line{
     max-width: 800px;
-    color: #ffffff;
+    margin: auto;
+    border: none;
+    border-bottom: 1px solid #fff2f2;
+    opacity: 0.6;
 }
 
 .copyright-container{
